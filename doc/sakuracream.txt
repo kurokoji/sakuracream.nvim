@@ -1,0 +1,63 @@
+*sakuracream.txt*  Soft pink light colorscheme for Neovim
+
+==============================================================================
+INTRODUCTION                                                    *sakuracream*
+
+Sakuracream is a soft pink light colorscheme for Neovim.
+
+Usage:
+>
+  colorscheme sakuracream
+<
+
+Notes:
+- Designed for |'background'|=light.
+
+==============================================================================
+CONFIGURATION                                           *sakuracream-setup*
+
+Configure before applying the colorscheme:
+>
+  require("sakuracream").setup({
+    italic = true,
+    italic_comments = true,
+    bold = true,
+    lualine = true,
+    transparent = false,
+    palette = {
+      -- override any color from the palette
+      -- accent = "#c15886",
+    },
+  })
+<
+
+Options:
+  italic            (boolean) enable italics for general groups.
+  italic_comments   (boolean) enable italics for comments.
+  bold              (boolean) enable bold for emphasis groups.
+  lualine           (boolean) enable built-in lualine highlights.
+  transparent       (boolean) disable background fills.
+  palette           (table) override palette keys.
+
+Palette keys:
+  bg, bg_alt, bg_highlight, fg, fg_alt, fg_dim, border, accent, accent_alt,
+  red, orange, yellow, green, teal, blue, purple
+
+==============================================================================
+LUALINE                                             *sakuracream-lualine*
+
+If you use lualine, set the theme name to "sakuracream":
+>
+  require("lualine").setup({
+    options = {
+      theme = "sakuracream",
+    },
+  })
+<
+
+==============================================================================
+ABOUT                                                    *sakuracream-about*
+
+Author: kurokoji
+
+vim:tw=78:ft=help:norl:
