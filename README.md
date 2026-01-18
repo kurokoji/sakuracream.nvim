@@ -1,4 +1,4 @@
-# sakuracream
+# sakuracream.nvim
 
 Soft pink light colorscheme for Neovim.
 
